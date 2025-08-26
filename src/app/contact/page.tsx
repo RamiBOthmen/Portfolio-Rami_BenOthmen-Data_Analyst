@@ -43,7 +43,7 @@ export default function ContactPage() {
       if (response.ok) {
         setSubmitStatus({
           type: "success",
-          message: "Message sent successfully! I'll get back to you soon."
+          message: "Message sent successfully! I&apos;ll get back to you soon."
         });
         setFormData({ name: "", email: "", message: "" });
       } else {
@@ -52,7 +52,7 @@ export default function ContactPage() {
           message: data.error || "Failed to send message. Please try again."
         });
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message: "Network error. Please check your connection and try again."

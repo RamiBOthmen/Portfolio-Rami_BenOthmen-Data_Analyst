@@ -10,7 +10,18 @@ import ImageModal from "@/components/ImageModal";
 import { ArrowRight, ZoomIn } from "lucide-react";
 
 function ProjectCard({ project, onViewDetails }: { 
-  project: any; 
+  project: {
+    id: string;
+    title: string;
+    description: string;
+    tools: string;
+    dataSource?: string;
+    role: string;
+    results: string;
+    hasDetailedView?: boolean;
+    externalLink?: string;
+    images?: string[];
+  }; 
   onViewDetails: (projectId: string) => void;
 }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
