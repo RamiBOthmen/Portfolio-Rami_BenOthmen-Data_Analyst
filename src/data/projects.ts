@@ -36,16 +36,17 @@ export interface DetailedProject {
 
 export const projects: Project[] = [
   {
-    id: "employee-performance-analytics",
-    title: "Employee Performance & Analytics",
-    description: "End-to-end HR analytics solution analyzing performance, absenteeism, turnover, and training data to provide actionable insights for improving employee retention and optimizing training programs.",
-    tools: "Tableau Desktop, Google Sheets, Tableau Public",
+    id: "netflix-dashboard",
+    title: "Netflix Content Analysis Dashboard",
+    description: "Comprehensive analysis of Netflix's content library exploring content distribution, genre trends, geographic origins, and audience demographics. Built interactive visualizations to understand content strategy, market positioning, and viewer preferences across different regions and time periods.",
+    tools: "Tableau Public, SQL, Google Sheets",
     role: "Data analysis, visualization, and dashboard design",
-    results: "Identified key workforce trends and provided strategic recommendations for employee retention and training optimization.",
-    images: ["Absence_Analysis_dashboard.png"],
-    externalLink: "https://public.tableau.com/views/EmployeeAnalysis_17558915171540/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+    results: "Uncovered key insights about content distribution, identified top-performing genres and countries, and provided strategic recommendations for content acquisition and regional expansion.",
+    images: ["netflix_dashboard.png"],
+    externalLink: "https://public.tableau.com/views/Netflix_17552082878090/Dashboard1_1?:showVizHome=no",
     hasDetailedView: true
   },
+
   {
     id: "global-ecommerce-sales-dashboard",
     title: "Global E-Commerce Sales Performance Dashboard",
@@ -57,6 +58,42 @@ export const projects: Project[] = [
     externalLink: "https://public.tableau.com/views/ecommerce_star_schema/SalesOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
     hasDetailedView: true
   },
+
+  {
+    id: "joby-hunter",
+    title: "JobyHunter — AI-driven Talent Acquisition System",
+    description: "Comprehensive talent acquisition platform with AI integration and advanced analytics dashboard. Built an end-to-end recruitment solution featuring web scraping, candidate screening, and HR analytics to optimize hiring processes and provide actionable insights for recruitment strategy.",
+    tools: "Python, ASP.NET Core, Angular, MongoDB, SQL Server, Power BI, Selenium",
+    role: "Led development, integrated web scraping, optimized architecture",
+    results: "Reduced response times by 20%, improved hiring efficiency by 30%, and provided data-driven insights for recruitment optimization.",
+    images: ["joby_hunter_dashboard.png"],
+    hasDetailedView: true
+  },
+  
+  {
+    id: "sales-insights",
+    title: "Sales Insights Engine",
+    description: "Comprehensive sales performance dashboard built with SQL Server Data Warehouse and Power BI using DAX measures. Analyzes sales performance across time, product lines, and order status to identify trends, top-performing products, and potential issues in the sales pipeline.",
+    tools: "SQL Server, Power BI, DAX",
+    dataSource: "Synthetic dataset",
+    role: "Data warehouse design, DAX development, and dashboard creation",
+    results: "Identified critical sales pipeline issues with 55% of sales value in problematic statuses, provided actionable insights for inventory planning and marketing campaigns.",
+    images: ["sum_of_sales_by_month_and_status.png"],
+    hasDetailedView: true
+  },
+
+  {
+    id: "employee-performance-analytics",
+    title: "Employee Performance & Analytics",
+    description: "End-to-end HR analytics solution analyzing performance, absenteeism, turnover, and training data to provide actionable insights for improving employee retention and optimizing training programs.",
+    tools: "Tableau Desktop, Google Sheets, Tableau Public",
+    role: "Data analysis, visualization, and dashboard design",
+    results: "Identified key workforce trends and provided strategic recommendations for employee retention and training optimization.",
+    images: ["Absence_Analysis_dashboard.png"],
+    externalLink: "https://public.tableau.com/views/EmployeeAnalysis_17558915171540/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+    hasDetailedView: true
+  },
+
   {
     id: "ecommerce-sales-customer-dashboard",
     title: "E-Commerce Sales & Customer Performance Dashboard",
@@ -68,38 +105,6 @@ export const projects: Project[] = [
     externalLink: "https://public.tableau.com/views/Education_17555429105260/Dashboard1?:showVizHome=no",
     hasDetailedView: true
   },
-  {
-    id: "netflix-dashboard",
-    title: "Netflix Content Analysis Dashboard",
-    description: "Comprehensive analysis of Netflix's content library exploring content distribution, genre trends, geographic origins, and audience demographics. Built interactive visualizations to understand content strategy, market positioning, and viewer preferences across different regions and time periods.",
-    tools: "Tableau Public, SQL, Google Sheets",
-    role: "Data analysis, visualization, and dashboard design",
-    results: "Uncovered key insights about content distribution, identified top-performing genres and countries, and provided strategic recommendations for content acquisition and regional expansion.",
-    images: ["netflix_dashboard.png"],
-    externalLink: "https://public.tableau.com/views/Netflix_17552082878090/Dashboard1_1?:showVizHome=no",
-    hasDetailedView: true
-  },
-  {
-    id: "joby-hunter",
-    title: "JobyHunter — AI-driven Talent Acquisition System",
-    description: "Comprehensive talent acquisition platform with AI integration and advanced analytics dashboard. Built an end-to-end recruitment solution featuring web scraping, candidate screening, and HR analytics to optimize hiring processes and provide actionable insights for recruitment strategy.",
-    tools: "Python, ASP.NET Core, Angular, MongoDB, SQL Server, Power BI, Selenium",
-    role: "Led development, integrated web scraping, optimized architecture",
-    results: "Reduced response times by 20%, improved hiring efficiency by 30%, and provided data-driven insights for recruitment optimization.",
-    images: ["joby_hunter_dashboard.png"],
-    hasDetailedView: true
-  },
-  {
-    id: "sales-insights",
-    title: "Sales Insights Engine",
-    description: "Comprehensive sales performance dashboard built with SQL Server Data Warehouse and Power BI using DAX measures. Analyzes sales performance across time, product lines, and order status to identify trends, top-performing products, and potential issues in the sales pipeline.",
-    tools: "SQL Server, Power BI, DAX",
-    dataSource: "Synthetic dataset",
-    role: "Data warehouse design, DAX development, and dashboard creation",
-    results: "Identified critical sales pipeline issues with 55% of sales value in problematic statuses, provided actionable insights for inventory planning and marketing campaigns.",
-    images: ["sum_of_sales_by_month_and_status.png"],
-    hasDetailedView: true
-  }
 ];
 
 export const detailedProjects: Record<string, DetailedProject> = {

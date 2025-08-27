@@ -33,11 +33,26 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Resolve sender and recipient from env
+    const fromAddress = process.env.RESEND_FROM || '';
+    const toAddress = process.env.RESEND_TO_EMAIL || '';
+
+    if (!fromAddress) {
+      console.error('RESEND_FROM not configured. Set a verified sender like "Your Name <contact@yourdomain.com>"');
+      return NextResponse.json(
+        { error: 'Email service sender not configured' },
+        { status: 500 }
+      );
+    }
+
+    const toList = toAddress ? [toAddress] : undefined;
+
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Portfolio Contact <noreply@yourdomain.com>', // You'll need to update this
-      to: ['ramibenothmen15@gmail.com'],
+      from: fromAddress,
+      to: toList || ['ramibenothmen15@gmail.com'],
       subject: `New Contact Form Message from ${name}`,
+      replyTo: [email],
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #0369a1;">New Contact Form Message</h2>

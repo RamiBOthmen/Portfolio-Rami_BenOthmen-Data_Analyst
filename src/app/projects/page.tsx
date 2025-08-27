@@ -88,7 +88,7 @@ function ProjectCard({ project, onViewDetails }: {
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
           >
-            Open Project
+            Open Source
           </Link>
         )}
       </div>

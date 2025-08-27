@@ -1,13 +1,30 @@
+"use client";
+
 import Section from "@/components/Section";
 import Image from "next/image";
+import { useState } from "react";
+import ImageModal from "@/components/ImageModal";
 
 export default function AboutPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalSrc, setModalSrc] = useState("");
+  const [modalAlt, setModalAlt] = useState("");
+
+  const openModal = (src: string, alt: string) => {
+    setModalSrc(src);
+    setModalAlt(alt);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="py-8">
+      <ImageModal src={modalSrc} alt={modalAlt} isOpen={isModalOpen} onClose={closeModal} />
       <Section title="About Me">
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <p>
-            Software Engineer with a Master's degree in Engineering of Decisional Information Systems and one year of experience developing solutions. Currently transitioning into data analytics and seeking a full-time role as a Data Analyst or Data Engineer. Can start immediately.
+            Software Engineer with a Master's degree in Engineering of Decisional Information Systems and one year of experience developing solutions. Currently transitioning into data analytics and seeking a full-time role as a Data Analyst or Data Engineer.
           </p>
         </div>
       </Section>
@@ -21,13 +38,19 @@ export default function AboutPage() {
                 <p className="text-sm text-gray-600 dark:text-gray-300">Top of the Class (ISET Zaghouan) — 2022–2024</p>
               </div>
               <div className="flex-shrink-0">
-                <Image
-                  src="/assets/projects/master.jpg"
-                  alt="Graduation photo - Top of the Class achievement"
-                  width={120}
-                  height={160}
-                  className="rounded-lg border border-gray-200 dark:border-gray-700"
-                />
+                <button
+                  type="button"
+                  onClick={() => openModal("/assets/projects/master.jpg", "Graduation photo - Top of the Class achievement")}
+                  className="rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                >
+                  <Image
+                    src="/assets/projects/master.jpg"
+                    alt="Graduation photo - Top of the Class achievement"
+                    width={120}
+                    height={160}
+                    className="rounded-lg border border-gray-200 dark:border-gray-700 cursor-zoom-in"
+                  />
+                </button>
               </div>
             </div>
           </li>
@@ -38,13 +61,19 @@ export default function AboutPage() {
                 <p className="text-sm text-gray-600 dark:text-gray-300">Faculty of Sciences of Bizerte — 2019–2022</p>
               </div>
               <div className="flex-shrink-0">
-                <Image
-                  src="/assets/projects/bachelor.jpeg"
-                  alt="Bachelor's degree graduation photo"
-                  width={120}
-                  height={160}
-                  className="rounded-lg border border-gray-200 dark:border-gray-700"
-                />
+                <button
+                  type="button"
+                  onClick={() => openModal("/assets/projects/bachelor.jpeg", "Bachelor's degree graduation photo")}
+                  className="rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                >
+                  <Image
+                    src="/assets/projects/bachelor.jpeg"
+                    alt="Bachelor's degree graduation photo"
+                    width={120}
+                    height={160}
+                    className="rounded-lg border border-gray-200 dark:border-gray-700 cursor-zoom-in"
+                  />
+                </button>
               </div>
             </div>
           </li>
@@ -167,6 +196,22 @@ export default function AboutPage() {
                     <p className="text-xs text-sky-600 dark:text-sky-400">Share Data Through the Art of Visualization</p>
                   </div>
                 </div>
+                
+                <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+                  <Image
+                    src="/assets/projects/carrie.png"
+                    alt="Carrie Ott-Holland"
+                    width={40}
+                    height={40}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">Carrie Ott-Holland</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Research Manager at Google</p>
+                    <p className="text-xs text-sky-600 dark:text-sky-400">Data Analysis with R Programming</p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </li>

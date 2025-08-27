@@ -50,8 +50,8 @@ export default function SkillsPage() {
       <Section title="Technical Skills">
         <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {[
-            "Python", "R", "Selenium", "Power BI", "Tableau", "ETL  (Extract, Transform, Load)", "SQL (SQL Server, MySQL, PostgreSQL)", "NoSQL (MongoDB)", "SCRUM",
-            "Microsoft Office Excel, Word & PowerPoint", "Google Sheets, Docs & Slides", "Git / GitHub",
+            "Spreadsheets (MS Excel, Google Sheets)","SQL (SQL Server, MySQL, PostgreSQL)", "Tableau, Power BI", "R",
+            "Python", "ETL  (Extract, Transform, Load)", "NoSQL (MongoDB)", "SCRUM", "Git / GitHub",
           ].map((skill) => (
             <li key={skill} className="rounded-lg border border-gray-200 dark:border-gray-800 p-3">{skill}</li>
           ))}
