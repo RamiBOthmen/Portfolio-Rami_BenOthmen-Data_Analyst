@@ -54,7 +54,7 @@ export const projects: Project[] = [
     tools: "Tableau Public, Tableau Desktop, SQL",
     role: "Data analysis, visualization, and dashboard design",
     results: "Centralized sales data into a single source of truth, identified that returning customers generate 60% of revenue despite being only 25% of the customer base, and provided strategic insights for business growth.",
-    images: ["sales_dashboard.png"],
+    images: ["E-Commerce Sales Performance/6.png", "E-Commerce Sales Performance/10.png"],
     externalLink: "https://public.tableau.com/views/ecommerce_star_schema/SalesOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
     hasDetailedView: true
   },
@@ -218,7 +218,18 @@ export const detailedProjects: Record<string, DetailedProject> = {
       "A well-designed star schema data model significantly improves dashboard performance and enables flexible analysis across multiple dimensions.",
       "Interactive dashboard elements (parameters, filters) greatly enhance user experience and enable self-service analytics for stakeholders."
          ],
-     images: ["sales_dashboard.png", "product_and_customer_dashboard.png"],
+     images: [
+       "E-Commerce Sales Performance/1.png",
+       "E-Commerce Sales Performance/2.png",
+       "E-Commerce Sales Performance/3.png",
+       "E-Commerce Sales Performance/4.png",
+       "E-Commerce Sales Performance/5.png",
+       "E-Commerce Sales Performance/6.png",
+       "E-Commerce Sales Performance/7.png",
+       "E-Commerce Sales Performance/8.png",
+       "E-Commerce Sales Performance/9.png",
+       "E-Commerce Sales Performance/10.png"
+     ],
      externalLink: "https://public.tableau.com/views/ecommerce_star_schema/SalesOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
    },
    "ecommerce-sales-customer-dashboard": {

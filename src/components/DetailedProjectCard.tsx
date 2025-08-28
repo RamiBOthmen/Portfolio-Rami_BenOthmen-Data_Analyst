@@ -43,7 +43,19 @@ export default function DetailedProjectCard({
   externalLink,
   onBack
 }: DetailedProjectCardProps) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const handlePrev = () => {
+    if (selectedIndex === null || !images || images.length === 0) return;
+    if (selectedIndex === 0) return;
+    setSelectedIndex(selectedIndex - 1);
+  };
+
+  const handleNext = () => {
+    if (selectedIndex === null || !images || images.length === 0) return;
+    if (selectedIndex === images.length - 1) return;
+    setSelectedIndex(selectedIndex + 1);
+  };
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -223,7 +235,7 @@ export default function DetailedProjectCard({
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-3">Project Visualizations</h3>
               <div className="space-y-3">
                 {images.map((image, index) => (
-                  <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedImage(`/assets/projects/${image}`)}>
+                  <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedIndex(index)}>
                     <Image
                       src={`/assets/projects/${image}`}
                       alt={`${title} visualization ${index + 1}`}
@@ -241,12 +253,16 @@ export default function DetailedProjectCard({
           )}
 
           {/* Image Modal */}
-          {selectedImage && (
+          {selectedIndex !== null && images && images[selectedIndex] && (
             <ImageModal
-              src={selectedImage}
+              src={`/assets/projects/${images[selectedIndex]}`}
               alt={`${title} visualization`}
-              isOpen={!!selectedImage}
-              onClose={() => setSelectedImage(null)}
+              isOpen={selectedIndex !== null}
+              onClose={() => setSelectedIndex(null)}
+              onPrev={handlePrev}
+              onNext={handleNext}
+              canPrev={selectedIndex > 0}
+              canNext={selectedIndex < (images?.length || 0) - 1}
             />
           )}
         </div>

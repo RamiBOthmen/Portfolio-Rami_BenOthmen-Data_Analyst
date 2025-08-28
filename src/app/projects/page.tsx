@@ -24,7 +24,7 @@ function ProjectCard({ project, onViewDetails }: {
   }; 
   onViewDetails: (projectId: string) => void;
 }) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   return (
     <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/50 hover:shadow-lg transition-shadow">
@@ -35,12 +35,12 @@ function ProjectCard({ project, onViewDetails }: {
       {project.images && project.images.length > 0 && (
         <div className="mt-4">
           <h4 className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-2">Project Visualizations:</h4>
-          <div className={project.images.length === 1 ? "grid grid-cols-1 gap-3" : "grid grid-cols-1 sm:grid-cols-2 gap-3"}>
-            {project.images.slice(0, 2).map((image: string, index: number) => (
-              <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedImage(`/assets/projects/${image}`)}>
+          <div className="grid grid-cols-1 gap-3">
+            {[project.images[0]].map((image: string, index: number) => (
+              <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedIndex(0)}>
                 <Image
                   src={`/assets/projects/${image}`}
-                  alt={`${project.title} visualization ${index + 1}`}
+                  alt={`${project.title} visualization 1`}
                   width={500}
                   height={375}
                   className="rounded-lg border border-gray-200 dark:border-gray-700 w-full h-auto hover:opacity-90 transition-opacity"
@@ -55,12 +55,25 @@ function ProjectCard({ project, onViewDetails }: {
       )}
 
       {/* Image Modal */}
-      {selectedImage && (
+      {selectedIndex !== null && project.images && project.images[selectedIndex] && (
         <ImageModal
-          src={selectedImage}
+          src={`/assets/projects/${project.images[selectedIndex]}`}
           alt={`${project.title} visualization`}
-          isOpen={!!selectedImage}
-          onClose={() => setSelectedImage(null)}
+          isOpen={selectedIndex !== null}
+          onClose={() => setSelectedIndex(null)}
+          onPrev={project.images.length > 1 ? () => {
+            if (selectedIndex === null) return;
+            if (selectedIndex === 0) return;
+            setSelectedIndex(selectedIndex - 1);
+          } : undefined}
+          onNext={project.images.length > 1 ? () => {
+            if (selectedIndex === null) return;
+            const maxIndex = project.images!.length - 1;
+            if (selectedIndex === maxIndex) return;
+            setSelectedIndex(selectedIndex + 1);
+          } : undefined}
+          canPrev={project.images.length > 1 ? selectedIndex > 0 : false}
+          canNext={project.images.length > 1 ? selectedIndex < project.images.length - 1 : false}
         />
       )}
       
