@@ -42,7 +42,7 @@ export const projects: Project[] = [
     tools: "Tableau Public, SQL, Google Sheets",
     role: "Data analysis, visualization, and dashboard design",
     results: "Uncovered key insights about content distribution, identified top-performing genres and countries, and provided strategic recommendations for content acquisition and regional expansion.",
-    images: ["netflix_dashboard.png"],
+    images: ["netflix_vizzes/netflix_dashboard.png"],
     externalLink: "https://public.tableau.com/views/Netflix_17552082878090/Dashboard1_1?:showVizHome=no",
     hasDetailedView: true
   },
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     tools: "Tableau Desktop, Google Sheets, Tableau Public",
     role: "Data analysis, visualization, and dashboard design",
     results: "Identified key workforce trends and provided strategic recommendations for employee retention and training optimization.",
-    images: ["Absence_Analysis_dashboard.png"],
+    images: ["employee_analysis_vizzes/Absence Analysis dashboard.png", "employee_analysis_vizzes/turnover_dashboard.png", "employee_analysis_vizzes/performance_dashboard.png"],
     externalLink: "https://public.tableau.com/views/EmployeeAnalysis_17558915171540/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
     hasDetailedView: true
   },
@@ -160,7 +160,17 @@ export const detailedProjects: Record<string, DetailedProject> = {
       "The importance of data understanding and cleaning before visualization.",
       "A well-designed data model (Star Schema) is crucial for building effective and performant dashboards."
     ],
-    images: ["Employee_Turnover_dashboard.png", "Absence_Analysis_dashboard.png", "Performance_and_Productivite_dashboard.png"],
+    images: [
+      "employee_analysis_vizzes/Absence Analysis dashboard.png",
+      "employee_analysis_vizzes/1.png",
+      "employee_analysis_vizzes/2.png",
+      "employee_analysis_vizzes/turnover_dashboard.png",
+      "employee_analysis_vizzes/3.png",
+      "employee_analysis_vizzes/4.png",
+      "employee_analysis_vizzes/performance_dashboard.png",
+      "employee_analysis_vizzes/5.png",
+      "employee_analysis_vizzes/6.png"
+    ],
     externalLink: "https://public.tableau.com/views/EmployeeAnalysis_17558915171540/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
   },
   "global-ecommerce-sales-dashboard": {
@@ -353,7 +363,14 @@ export const detailedProjects: Record<string, DetailedProject> = {
         "Combining multiple chart types (pie charts, line charts, bar charts) creates comprehensive dashboards that tell complete stories.",
         "Temporal trend analysis reveals strategic business decisions and can inform future content planning and investment decisions."
       ],
-             images: ["netflix_dashboard.png"],
+             images: [
+               "netflix_vizzes/netflix_dashboard.png",
+               "netflix_vizzes/n1.png",
+               "netflix_vizzes/n2.png",
+               "netflix_vizzes/n3.png",
+               "netflix_vizzes/n4.png",
+               "netflix_vizzes/n5.png"
+             ],
        externalLink: "https://public.tableau.com/views/Netflix_17552082878090/Dashboard1_1?:showVizHome=no"
      },
      "joby-hunter": {
