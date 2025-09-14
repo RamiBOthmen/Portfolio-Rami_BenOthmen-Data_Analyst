@@ -105,6 +105,17 @@ export const projects: Project[] = [
     externalLink: "https://public.tableau.com/views/Education_17555429105260/Dashboard1?:showVizHome=no",
     hasDetailedView: true
   },
+
+  {
+    id: "vivo-mobile-phones-analysis",
+    title: "Vivo Mobile Data Analysis — Turning Raw Specs into Market Insights",
+    description: "Analyzed Vivo mobile phone specifications to uncover strategic product positioning and consumer preferences. Applied Excel data cleaning techniques and PivotTable analysis to transform raw specification data into actionable business intelligence. Identified key market trends and popular configurations that drive Vivo's strategic focus on the budget and mid-range mobile phone market.",
+    tools: "Microsoft Excel (PivotTables, PivotCharts, Text to Columns, Formulas)",
+    role: "Data analysis, data cleaning, and dashboard design",
+    results: "8GB RAM + 128GB ROM was the most demanded configuration. Mid-range processors (Mediatek Helio P35, Qualcomm Snapdragon 680) dominate Vivo's lineup, strategically paired with 5000mAh batteries for the value-driven market segment.",
+    images: ["vivo_phones/dashboard.png"],
+    hasDetailedView: true
+  },
 ];
 
 export const detailedProjects: Record<string, DetailedProject> = {
@@ -497,5 +508,62 @@ export const detailedProjects: Record<string, DetailedProject> = {
           "Combining multiple chart types (stacked columns, donut charts, line charts) creates comprehensive dashboards that tell complete business stories and reveal actionable insights."
         ],
         images: ["sum_of_sales_by_month_and_status.png", "sum_of_sales_by_day.png"]
+      },
+      "vivo-mobile-phones-analysis": {
+        id: "vivo-mobile-phones-analysis",
+        title: "Vivo Mobile Data Analysis — Turning Raw Specs into Market Insights",
+        subtitle: "Transforming Raw Phone Data into Strategic Business Intelligence",
+        overview: "Analyzed Vivo mobile phone specifications to uncover strategic product positioning and consumer preferences. Applied Excel data cleaning techniques and PivotTable analysis to transform raw specification data into actionable business intelligence. Identified key market trends and popular configurations that drive Vivo's strategic focus on the budget and mid-range mobile phone market.",
+        objectives: [
+          "Identify most popular RAM/ROM combinations",
+          "Analyze processor performance and customer ratings correlation",
+          "Determine Vivo's strategic market positioning",
+          "Create comprehensive dashboard for business insights"
+        ],
+        dataSources: "CSV dataset containing Vivo mobile phone specifications including RAM, ROM, processor types, battery capacity, and customer ratings",
+        dataModel: "Structured dataset with phone specifications as categorical variables (RAM, ROM, processor, battery) and numerical variables (ratings). Utilized Excel's data manipulation features including Text to Columns, PivotTables, and PivotCharts for analysis.",
+        tools: [
+          "Microsoft Excel (PivotTables, PivotCharts, Text to Columns, Formulas)"
+        ],
+        kpis: [
+          "Most Common Configuration: 8GB RAM with 128GB ROM combination frequency",
+          "Processor Performance: Average ratings by processor type (Mediatek Helio P35, Qualcomm Snapdragon 680)",
+          "Battery Strategy: Most common processor for phones with 5000mAh battery capacity",
+          "RAM Distribution: Phone count distribution across different RAM configurations",
+          "Rating Analysis: Highest average rating combinations by RAM and ROM specifications"
+        ],
+        insights: [
+          {
+            title: "8GB RAM + 128GB ROM was the most demanded configuration",
+            finding: "The most frequent combination of specifications is 8GB RAM with 128GB ROM, highlighting Vivo's focus on providing a popular configuration that balances performance with affordability.",
+            recommendation: "Continue investing in this configuration while exploring opportunities to optimize costs and expand market share in this segment."
+          },
+          {
+            title: "Mid-range processors dominate Vivo's lineup",
+            finding: "The most common processors are the Mediatek Helio P35 and Qualcomm Snapdragon 680, frequently paired with 5000mAh batteries, suggesting a clear strategy of targeting the budget and mid-range market.",
+            recommendation: "Leverage this positioning by emphasizing battery life and value proposition in marketing campaigns while maintaining competitive pricing."
+          },
+          {
+            title: "Strategic focus on value-driven market segment",
+            finding: "Analysis reveals Vivo's clear positioning in the budget and mid-range market with processor-battery combinations optimized for long-lasting performance at competitive prices.",
+            recommendation: "Use this positioning to differentiate from premium competitors and capture market share in the growing value-conscious consumer segment."
+          }
+        ],
+        challenges: [
+          "Raw data required extensive cleaning using Excel's Text to Columns feature to separate combined data fields and extract numerical ratings from text strings",
+          "Creating meaningful PivotTables that effectively communicate business insights while maintaining data integrity and accuracy"
+        ],
+        lessons: [
+          "Excel's data cleaning capabilities, particularly Text to Columns and formula functions, are essential for preparing raw data for analysis",
+          "PivotTables and PivotCharts are powerful tools for exploratory data analysis and can reveal patterns not immediately obvious in raw data"
+        ],
+        images: [
+          "vivo_phones/dashboard.png",
+          "vivo_phones/pivot_table_Common combination of RAM and ROM.png",
+          "vivo_phones/pivot_table_Highest average rating by RAM and ROM.png",
+          "vivo_phones/pivot_table_most common processor for phones with a 5000 mAh battery.png",
+          "vivo_phones/pivot_table_phones_by_ram.png",
+          "vivo_phones/pivot_table_processor_by_rating.png"
+        ]
       }
     };

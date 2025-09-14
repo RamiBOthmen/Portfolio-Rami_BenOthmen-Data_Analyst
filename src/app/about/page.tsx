@@ -94,7 +94,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/imen.png"
+                    src="/assets/about/imen.png"
                     alt="Imen Zarai"
                     width={40}
                     height={40}
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/tony.png"
+                    src="/assets/about/tony.png"
                     alt="Tony Francis"
                     width={40}
                     height={40}
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/ximena.png"
+                    src="/assets/about/ximena.png"
                     alt="Ximena F."
                     width={40}
                     height={40}
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/Hallie.png"
+                    src="/assets/about/Hallie.png"
                     alt="Hallie Roth"
                     width={40}
                     height={40}
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/sally.png"
+                    src="/assets/about/sally.png"
                     alt="Sally Kim"
                     width={40}
                     height={40}
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/ayanna.png"
+                    src="/assets/about/ayanna.png"
                     alt="Ayanna Berry"
                     width={40}
                     height={40}
@@ -184,7 +184,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/kevin.png"
+                    src="/assets/about/kevin.png"
                     alt="Kevin Hartman"
                     width={40}
                     height={40}
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/projects/carrie.png"
+                    src="/assets/about/carrie.png"
                     alt="Carrie Ott-Holland"
                     width={40}
                     height={40}

@@ -64,7 +64,11 @@ export default function ContactPage() {
 
   return (
     <div className="py-8">
-      <Section title="Contact" subtitle="Reach out for roles, collaborations, or questions.">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact</h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300">Reach out for roles, collaborations, or questions.</p>
+      </div>
+      <Section title="" subtitle="">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/50">
             <ul className="grid gap-2 text-sm">
