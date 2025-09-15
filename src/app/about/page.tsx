@@ -139,7 +139,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/about/Hallie.png"
+                    src="/assets/about/hallie.png"
                     alt="Hallie Roth"
                     width={40}
                     height={40}
