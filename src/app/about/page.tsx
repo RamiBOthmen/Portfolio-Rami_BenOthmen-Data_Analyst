@@ -199,7 +199,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/about/carrie.png"
+                    src="/assets/about/Carri.jpeg"
                     alt="Carrie Ott-Holland"
                     width={40}
                     height={40}
