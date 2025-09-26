@@ -116,6 +116,17 @@ export const projects: Project[] = [
     images: ["vivo_phones/dashboard.png"],
     hasDetailedView: true
   },
+
+  {
+    id: "data-professional-survey-analysis",
+    title: "Data Professional Survey Analysis Dashboard",
+    description: "Interactive BI dashboard in Power BI transforming raw global survey responses into actionable insights on roles, compensation, skills, and satisfaction.",
+    tools: "Microsoft Power BI, Power Query (M), DAX",
+    role: "Data modeling, ETL with Power Query, DAX measures, dashboard design",
+    results: "Revealed salary leadership for Data Scientists, highlighted work/life balance vs salary satisfaction gap, and quantified Python as top language preference across 630 respondents.",
+    images: ["Survey_Analysis/Survey_Dashboard.png"],
+    hasDetailedView: true
+  },
 ];
 
 export const detailedProjects: Record<string, DetailedProject> = {
@@ -566,4 +577,74 @@ export const detailedProjects: Record<string, DetailedProject> = {
           "vivo_phones/pivot_table_processor_by_rating.png"
         ]
       }
+    ,
+    "data-professional-survey-analysis": {
+      id: "data-professional-survey-analysis",
+      title: "Data Professional Survey Analysis Dashboard",
+      subtitle: "Transforming Global Survey Responses into Actionable BI Insights",
+      overview: "A comprehensive Business Intelligence (BI) dashboard developed in Microsoft Power BI that turns hundreds of raw responses from a global data professional survey into interactive, actionable insights covering compensation, role hierarchy, skills, geography, and satisfaction metrics.",
+      objectives: [
+        "Make complex survey data accessible to non-technical stakeholders",
+        "Provide clear insights into compensation and role hierarchy across the data profession",
+        "Quantify job satisfaction across salary and work/life balance dimensions",
+        "Highlight in-demand skills and preferred programming languages",
+        "Enable interactive exploration by country, role, and experience level"
+      ],
+      dataSources: "Global Data Professionals Survey (630 respondents)",
+      dataModel: "Power BI model with cleaned and standardized survey tables. Power Query used for ETL (title grouping, salary range parsing to numeric averages, text normalization). DAX measures compute averages and segment-level KPIs for satisfaction, demographics, and compensation.",
+      tools: [
+        "Microsoft Power BI Desktop",
+        "Power Query (M)",
+        "DAX",
+        "Data Visualization"
+      ],
+      kpis: [
+        "Average Salary by Role",
+        "Happiness with Work/Life Balance (0–10)",
+        "Happiness with Salary (0–10)",
+        "Favorite Programming Language Distribution",
+        "Respondent Count by Country",
+        "Entry Difficulty Distribution"
+      ],
+      insights: [
+        {
+          title: "Data Scientists Lead in Compensation",
+          finding: "Data Scientists have the highest average salary, followed by Data Architects and Data Engineers.",
+          recommendation: "Prioritize hiring and retention strategies for these roles; align compensation bands with market benchmarks."
+        },
+        {
+          title: "Satisfaction Gap Identified",
+          finding: "Work/Life Balance happiness averages 5.74/10 versus Salary happiness at 4.27/10, indicating a notable disparity.",
+          recommendation: "Improve compensation transparency and review pay structures while preserving positive work/life balance policies."
+        },
+        {
+          title: "Python Dominates Skill Preference",
+          finding: "Python is the overwhelmingly favorite programming language among respondents.",
+          recommendation: "Invest in Python training and tooling; standardize analytics stacks around Python where feasible."
+        },
+        {
+          title: "Entry Perceived as Moderately Difficult",
+          finding: "42.7% report breaking into the field as 'Neither easy nor difficult'.",
+          recommendation: "Offer internships, mentorships, and skill-bridging programs to reduce perceived barriers to entry."
+        },
+        {
+          title: "United States Leads Respondent Geography",
+          finding: "The largest share of respondents is based in the United States.",
+          recommendation: "Tailor regional hiring and community programs to major respondent hubs while expanding outreach in underrepresented regions."
+        }
+      ],
+      challenges: [
+        "Standardizing free-text job titles into usable role groups",
+        "Parsing and averaging salary ranges into numeric values for analysis",
+        "Designing visuals that balance detail with clarity across multiple segments"
+      ],
+      lessons: [
+        "End-to-end BI workflow proficiency: ETL, modeling, DAX, and UX design",
+        "Careful data standardization is essential for reliable KPI comparisons",
+        "Interactive design (cross-filtering, drill-down) enhances stakeholder understanding and engagement"
+      ],
+      images: [
+        "Survey_Analysis/Survey_Dashboard.png"
+      ]
+    }
     };
