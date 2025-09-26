@@ -143,7 +143,6 @@ export default function AboutPage() {
                     alt="Hallie Roth"
                     width={40}
                     height={40}
-                    unoptimized
                     className="rounded-full"
                   />
                   <div>
@@ -204,7 +203,6 @@ export default function AboutPage() {
                     alt="Carrie Ott-Holland"
                     width={40}
                     height={40}
-                    unoptimized
                     className="rounded-full"
                   />
                   <div>
