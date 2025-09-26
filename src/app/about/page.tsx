@@ -139,7 +139,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/about/Halli.jpeg"
+                    src="/assets/about/hallie.jpeg"
                     alt="Hallie Roth"
                     width={40}
                     height={40}
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
-                    src="/assets/about/Carri.jpeg"
+                    src="/assets/about/carrie.jpeg"
                     alt="Carrie Ott-Holland"
                     width={40}
                     height={40}
