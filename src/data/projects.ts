@@ -124,7 +124,15 @@ export const projects: Project[] = [
     tools: "Microsoft Power BI, Power Query (M), DAX",
     role: "Data modeling, ETL with Power Query, DAX measures, dashboard design",
     results: "Revealed salary leadership for Data Scientists, highlighted work/life balance vs salary satisfaction gap, and quantified Python as top language preference across 630 respondents.",
-    images: ["Survey_Analysis/Survey_Dashboard.png"],
+    images: [
+      "Survey_Analysis/Survey_Dashboard.png",
+      "Survey_Analysis/bar_chart_average_salary_by_job_title.png",
+      "Survey_Analysis/column_chart_favorite_programming_language.png",
+      "Survey_Analysis/donut_chart_how_difficult_to_break_into_data.png",
+      "Survey_Analysis/kpi_happiness_with_salary.png",
+      "Survey_Analysis/kpi_happy_with_work_life_balance.png",
+      "Survey_Analysis/tree_map_country_of_survey_takers.png"
+    ],
     hasDetailedView: true
   },
 ];
@@ -644,7 +652,13 @@ export const detailedProjects: Record<string, DetailedProject> = {
         "Interactive design (cross-filtering, drill-down) enhances stakeholder understanding and engagement"
       ],
       images: [
-        "Survey_Analysis/Survey_Dashboard.png"
+        "Survey_Analysis/Survey_Dashboard.png",
+        "Survey_Analysis/bar_chart_average_salary_by_job_title.png",
+        "Survey_Analysis/column_chart_favorite_programming_language.png",
+        "Survey_Analysis/donut_chart_how_difficult_to_break_into_data.png",
+        "Survey_Analysis/kpi_happiness_with_salary.png",
+        "Survey_Analysis/kpi_happy_with_work_life_balance.png",
+        "Survey_Analysis/tree_map_country_of_survey_takers.png"
       ]
     }
     };
