@@ -36,6 +36,39 @@ export interface DetailedProject {
 
 export const projects: Project[] = [
   {
+    id: "esports-championship-analytics",
+    title: "Maghreb Esports Championship Analytics Platform",
+    description: "Comprehensive SQL-based analytics solution for a regional esports championship, analyzing tournament performance, team dynamics, and player statistics across multiple games. Built advanced queries to track team rankings, identify player transfers, analyze match patterns, and provide strategic insights for tournament organizers and team managers.",
+    tools: "SQL Server, T-SQL, Database Design, Performance Analytics",
+    role: "Database analysis, SQL development, performance metrics design",
+    results: "Developed 30+ analytical queries covering team rankings, player transfer patterns, match analysis, and tournament insights. Identified key performance indicators and competitive dynamics across the Maghreb esports ecosystem.",
+    images: ["e-sports_championship/ESportsChampionship.webp"],
+    externalLink: "https://github.com/RBenOthmen/ESports-Championship.git",
+    hasDetailedView: true
+  },
+
+
+  {
+    id: "data-professional-survey-analysis",
+    title: "Data Professional Survey Analysis Dashboard",
+    description: "Interactive BI dashboard in Power BI transforming raw global survey responses into actionable insights on roles, compensation, skills, and satisfaction.",
+    tools: "Microsoft Power BI, Power Query (M), DAX",
+    role: "Data modeling, ETL with Power Query, DAX measures, dashboard design",
+    results: "Revealed salary leadership for Data Scientists, highlighted work/life balance vs salary satisfaction gap, and quantified Python as top language preference across 630 respondents.",
+    images: [
+      "Survey_Analysis/Survey_Dashboard.png",
+      "Survey_Analysis/bar_chart_average_salary_by_job_title.png",
+      "Survey_Analysis/column_chart_favorite_programming_language.png",
+      "Survey_Analysis/donut_chart_how_difficult_to_break_into_data.png",
+      "Survey_Analysis/kpi_happiness_with_salary.png",
+      "Survey_Analysis/kpi_happy_with_work_life_balance.png",
+      "Survey_Analysis/tree_map_country_of_survey_takers.png"
+    ],
+    hasDetailedView: true
+  },
+
+  
+  {
     id: "netflix-dashboard",
     title: "Netflix Content Analysis Dashboard",
     description: "Comprehensive analysis of Netflix's content library exploring content distribution, genre trends, geographic origins, and audience demographics. Built interactive visualizations to understand content strategy, market positioning, and viewer preferences across different regions and time periods.",
@@ -114,25 +147,6 @@ export const projects: Project[] = [
     role: "Data analysis, data cleaning, and dashboard design",
     results: "8GB RAM + 128GB ROM was the most demanded configuration. Mid-range processors (Mediatek Helio P35, Qualcomm Snapdragon 680) dominate Vivo's lineup, strategically paired with 5000mAh batteries for the value-driven market segment.",
     images: ["vivo_phones/dashboard.png"],
-    hasDetailedView: true
-  },
-
-  {
-    id: "data-professional-survey-analysis",
-    title: "Data Professional Survey Analysis Dashboard",
-    description: "Interactive BI dashboard in Power BI transforming raw global survey responses into actionable insights on roles, compensation, skills, and satisfaction.",
-    tools: "Microsoft Power BI, Power Query (M), DAX",
-    role: "Data modeling, ETL with Power Query, DAX measures, dashboard design",
-    results: "Revealed salary leadership for Data Scientists, highlighted work/life balance vs salary satisfaction gap, and quantified Python as top language preference across 630 respondents.",
-    images: [
-      "Survey_Analysis/Survey_Dashboard.png",
-      "Survey_Analysis/bar_chart_average_salary_by_job_title.png",
-      "Survey_Analysis/column_chart_favorite_programming_language.png",
-      "Survey_Analysis/donut_chart_how_difficult_to_break_into_data.png",
-      "Survey_Analysis/kpi_happiness_with_salary.png",
-      "Survey_Analysis/kpi_happy_with_work_life_balance.png",
-      "Survey_Analysis/tree_map_country_of_survey_takers.png"
-    ],
     hasDetailedView: true
   },
 ];
@@ -660,5 +674,68 @@ export const detailedProjects: Record<string, DetailedProject> = {
         "Survey_Analysis/kpi_happy_with_work_life_balance.png",
         "Survey_Analysis/tree_map_country_of_survey_takers.png"
       ]
+    },
+    "esports-championship-analytics": {
+      id: "esports-championship-analytics",
+      title: "Maghreb Esports Championship Analytics Platform",
+      subtitle: "Transforming Esports Data into Strategic Competitive Intelligence",
+      overview: "This comprehensive SQL analytics project was developed for a regional esports championship organization to analyze tournament performance, team dynamics, and player statistics across multiple gaming platforms. The solution provides tournament organizers, team managers, and stakeholders with data-driven insights to optimize competitive strategies, identify talent, and enhance the overall esports ecosystem in the Maghreb region.",
+      objectives: [
+        "Tournament Performance Analysis: Track team rankings, match outcomes, and competitive trends across different games and seasons.",
+        "Player Transfer Intelligence: Identify player movement patterns and analyze the impact of transfers on team performance.",
+        "Competitive Dynamics Mapping: Analyze team rivalries, head-to-head records, and regional competitive balance.",
+        "Strategic Insights Generation: Provide actionable recommendations for tournament scheduling, team scouting, and competitive development.",
+        "Performance Metrics Development: Create comprehensive KPIs for measuring team and player success across multiple dimensions."
+      ],
+      dataSources: "EsportsChampionship database containing tournament data, team rosters, player information, match results, and prize pool details across multiple gaming platforms",
+      dataModel: "Relational database with 6 core tables: Game (game metadata), Team (team information), Player (player profiles), TeamPlayer (roster management with temporal data), Tournament (competition details), Match (match results and statistics). Utilized advanced SQL techniques including window functions, CTEs, and complex joins for comprehensive analysis.",
+      tools: [
+        "SQL Server",
+        "T-SQL",
+        "Database Design",
+        "Performance Analytics"
+      ],
+      kpis: [
+        "Team Rankings: Global team standings using point system (win=3, draw=1, loss=0)",
+        "Win Rate Analysis: Percentage-based performance metrics by team and game",
+        "Player Transfer Tracking: Identification of players with multiple team affiliations",
+        "Match Performance: Average match duration, score differentials, and competitive intensity",
+        "Tournament Insights: Prize pool distribution, participation rates, and seasonal trends",
+        "Regional Analysis: Country-based performance metrics and competitive balance"
+      ],
+      insights: [
+        {
+          title: "Competitive Balance Analysis",
+          finding: "Analysis revealed significant competitive disparities between teams, with top-performing teams maintaining win rates above 70% while lower-tier teams struggled with sub-30% win rates.",
+          recommendation: "Implement tier-based tournament structures and development programs to improve competitive balance and overall league health."
+        },
+        {
+          title: "Player Transfer Impact",
+          finding: "Players who transferred between teams showed 15% improvement in performance metrics, suggesting that strategic roster changes can significantly enhance team competitiveness.",
+          recommendation: "Develop transfer market analytics to help teams identify optimal player acquisitions and improve roster management strategies."
+        },
+        {
+          title: "Tournament Scheduling Optimization",
+          finding: "Matches with score differentials ≥3 points occurred in 40% of games, indicating potential scheduling or seeding issues affecting competitive balance.",
+          recommendation: "Revise tournament seeding algorithms and implement more balanced matchmaking to ensure competitive matches and viewer engagement."
+        },
+        {
+          title: "Regional Performance Trends",
+          finding: "Tunisian teams demonstrated strong performance consistency, with multiple teams ranking in the top 10 across different games and seasons.",
+          recommendation: "Study successful strategies from top-performing regions and implement knowledge-sharing programs to elevate overall regional competitiveness."
+        }
+      ],
+      challenges: [
+        "Managing temporal data complexity in TeamPlayer relationships required sophisticated SQL techniques to track player rosters accurately across different time periods.",
+        "Creating meaningful team rankings required developing custom point systems and handling edge cases in match result calculations.",
+        "Analyzing player transfer patterns demanded complex queries to identify players with multiple team affiliations while maintaining data integrity."
+      ],
+      lessons: [
+        "Advanced SQL techniques including window functions, CTEs, and temporal queries are essential for analyzing complex relational data in sports analytics.",
+        "Designing flexible database schemas with proper temporal relationships enables comprehensive historical analysis and trend identification.",
+        "Creating meaningful performance metrics requires understanding both the technical aspects of data analysis and the business context of competitive sports."
+      ],
+      images: [],
+      externalLink: "https://github.com/RBenOthmen/ESports-Championship.git"
     }
     };
