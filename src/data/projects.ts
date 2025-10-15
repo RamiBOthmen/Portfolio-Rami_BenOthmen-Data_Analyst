@@ -47,7 +47,6 @@ export const projects: Project[] = [
     hasDetailedView: true
   },
 
-
   {
     id: "data-professional-survey-analysis",
     title: "Data Professional Survey Analysis Dashboard",
@@ -57,17 +56,11 @@ export const projects: Project[] = [
     results: "Revealed salary leadership for Data Scientists, highlighted work/life balance vs salary satisfaction gap, and quantified Python as top language preference across 630 respondents.",
     images: [
       "Survey_Analysis/Survey_Dashboard.png",
-      "Survey_Analysis/bar_chart_average_salary_by_job_title.png",
-      "Survey_Analysis/column_chart_favorite_programming_language.png",
-      "Survey_Analysis/donut_chart_how_difficult_to_break_into_data.png",
-      "Survey_Analysis/kpi_happiness_with_salary.png",
-      "Survey_Analysis/kpi_happy_with_work_life_balance.png",
-      "Survey_Analysis/tree_map_country_of_survey_takers.png"
+      "Survey_Analysis/survey.jpg"
     ],
     hasDetailedView: true
   },
 
-  
   {
     id: "netflix-dashboard",
     title: "Netflix Content Analysis Dashboard",
@@ -99,7 +92,7 @@ export const projects: Project[] = [
     tools: "Python, ASP.NET Core, Angular, MongoDB, SQL Server, Power BI, Selenium",
     role: "Led development, integrated web scraping, optimized architecture",
     results: "Reduced response times by 20%, improved hiring efficiency by 30%, and provided data-driven insights for recruitment optimization.",
-    images: ["joby_hunter_dashboard.png"],
+    images: ["jobyhunter/hr.jpg"],
     hasDetailedView: true
   },
   
@@ -111,7 +104,7 @@ export const projects: Project[] = [
     dataSource: "Synthetic dataset",
     role: "Data warehouse design, DAX development, and dashboard creation",
     results: "Identified critical sales pipeline issues with 55% of sales value in problematic statuses, provided actionable insights for inventory planning and marketing campaigns.",
-    images: ["sum_of_sales_by_month_and_status.png"],
+    images: ["vehicle/vehicle.jpg"],
     hasDetailedView: true
   },
 
@@ -122,7 +115,7 @@ export const projects: Project[] = [
     tools: "Tableau Desktop, Google Sheets, Tableau Public",
     role: "Data analysis, visualization, and dashboard design",
     results: "Identified key workforce trends and provided strategic recommendations for employee retention and training optimization.",
-    images: ["employee_analysis_vizzes/Absence Analysis dashboard.png", "employee_analysis_vizzes/turnover_dashboard.png", "employee_analysis_vizzes/performance_dashboard.png"],
+    images: ["employee_analysis_vizzes/employee.jpg", "employee_analysis_vizzes/Absence Analysis dashboard.png", "employee_analysis_vizzes/turnover_dashboard.png", "employee_analysis_vizzes/performance_dashboard.png"],
     externalLink: "https://public.tableau.com/views/EmployeeAnalysis_17558915171540/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
     hasDetailedView: true
   },
@@ -134,7 +127,7 @@ export const projects: Project[] = [
     tools: "Tableau Public, SQL, Google Sheets",
     role: "Data analysis, visualization, and dashboard design",
     results: "Identified key revenue drivers, customer segments, and geographic performance patterns, providing data-driven recommendations for business optimization.",
-    images: ["education_dashboard.png"],
+    images: ["E-Commerce Sales Performance/ecommerce.jpg"],
     externalLink: "https://public.tableau.com/views/Education_17555429105260/Dashboard1?:showVizHome=no",
     hasDetailedView: true
   },
@@ -146,7 +139,7 @@ export const projects: Project[] = [
     tools: "Microsoft Excel (PivotTables, PivotCharts, Text to Columns, Formulas)",
     role: "Data analysis, data cleaning, and dashboard design",
     results: "8GB RAM + 128GB ROM was the most demanded configuration. Mid-range processors (Mediatek Helio P35, Qualcomm Snapdragon 680) dominate Vivo's lineup, strategically paired with 5000mAh batteries for the value-driven market segment.",
-    images: ["vivo_phones/dashboard.png"],
+    images: ["vivo_phones/vivo.jpg"],
     hasDetailedView: true
   },
 ];
