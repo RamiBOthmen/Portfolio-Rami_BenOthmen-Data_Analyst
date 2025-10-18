@@ -24,7 +24,9 @@ export default function AboutPage() {
       <Section title="About Me">
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <p>
-            Software Engineer with a Master's degree in Engineering of Decisional Information Systems and one year of experience developing solutions. Currently transitioning into data analytics and seeking a full-time role as a Data Analyst or Data Engineer.
+          Google certified Data Analyst and top graduate of a professional Master's program in Business Intelligence.<br />
+          With one year of experience in web development and a passion for transforming complex data into actionable insights.<br />
+          Seeking a full-time role as a Data Analyst or Data Engineer.
           </p>
         </div>
       </Section>
@@ -90,7 +92,7 @@ export default function AboutPage() {
             </p>
             
             <div className="mt-4">
-              <h4 className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-3">Program Instructors:</h4>
+              <h4 className="text-2xl font-medium text-gray-800 dark:text-gray-200 mb-3">Program Instructors :</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <Image
@@ -220,9 +222,9 @@ export default function AboutPage() {
 
       <Section title="Languages">
         <div className="grid sm:grid-cols-3 gap-3">
-          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">Arabic — Native</div>
-          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">English — C1</div>
-          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">French — Professional Working Proficiency</div>
+          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">Arabic (Native)</div>
+          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">English (C1)</div>
+          <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-4">French (Professional Working Proficiency)</div>
         </div>
       </Section>
     </div>

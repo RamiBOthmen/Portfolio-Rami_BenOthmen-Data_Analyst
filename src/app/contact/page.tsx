@@ -66,13 +66,13 @@ export default function ContactPage() {
     <div className="py-8">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">Reach out for roles, collaborations, or questions.</p>
+        <p className="text-lg text-gray-600 dark:text-gray-300">Reach out for roles, collaborations or questions.</p>
       </div>
       <Section title="" subtitle="">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/50">
             <ul className="grid gap-2 text-sm">
-              <li><span className="font-medium">Email:</span> <Link className="text-sky-700 dark:text-sky-300 hover:underline" href="mailto:ramibenothmen15@gmail.com">ramibenothmen15@gmail.com</Link></li>
+              {/* <li><span className="font-medium">Email:</span> <Link className="text-sky-700 dark:text-sky-300 hover:underline" href="mailto:ramibenothmen15@gmail.com">ramibenothmen15@gmail.com</Link></li> */}
               {/* <li><span className="font-medium">Phone:</span> <Link className="text-sky-700 dark:text-sky-300 hover:underline" href="tel:+21656221578">+216 56221578</Link></li> */}
               <li><span className="font-medium">LinkedIn:</span> <Link className="text-sky-700 dark:text-sky-300 hover:underline" target="_blank" href="https://www.linkedin.com/in/rami-ben-othmen">linkedin.com/in/rami-ben-othmen</Link></li>
               <li><span className="font-medium">GitHub:</span> <Link className="text-sky-700 dark:text-sky-300 hover:underline" target="_blank" href="https://github.com/RBenOthmen">github.com/RBenOthmen</Link></li>
@@ -98,6 +98,7 @@ export default function ContactPage() {
               Name
               <input 
                 name="name" 
+                placeholder="Your name..."
                 value={formData.name}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-900/50 p-2" 
@@ -110,6 +111,7 @@ export default function ContactPage() {
               <input 
                 type="email" 
                 name="email" 
+                placeholder="Your email..."
                 value={formData.email}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-900/50 p-2" 
@@ -121,6 +123,7 @@ export default function ContactPage() {
               Message
               <textarea 
                 name="message" 
+                placeholder="Your message..."
                 rows={5} 
                 value={formData.message}
                 onChange={handleInputChange}

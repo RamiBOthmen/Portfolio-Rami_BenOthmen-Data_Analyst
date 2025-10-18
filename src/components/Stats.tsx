@@ -26,8 +26,8 @@ export default function Stats() {
   return (
     <section className="mx-auto max-w-6xl px-4 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <StatCard label="Dashboards Built" value="12 +" trend="up" />
-        <StatCard label="Datasets Cleaned" value="14 +" trend="up" />
+        <StatCard label="Dashboards Built" value="14 +" trend="up" />
+        <StatCard label="Datasets Cleaned" value="19 +" trend="up" />
         <StatCard label="ETL Pipelines" value="8 +" trend="up" />
         <StatCard label="Stakeholders" value="5 +" trend="up" />
       </div>
