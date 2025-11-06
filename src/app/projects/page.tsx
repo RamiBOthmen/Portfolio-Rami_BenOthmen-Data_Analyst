@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { projects, detailedProjects } from "@/data/projects";
+import UFCEventAnalysis from "@/components/UFCEventAnalysis";
 import DetailedProjectCard from "@/components/DetailedProjectCard";
 import ImageModal from "@/components/ImageModal";
 import { ArrowRight, ZoomIn } from "lucide-react";
@@ -97,11 +98,10 @@ function ProjectCard({ project, onViewDetails }: {
         {project.externalLink && (
           <Link
             href={project.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...(!project.externalLink.startsWith("/") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
           >
-            Open Source
+            {project.externalLink.startsWith("/") ? "View Project" : "Open Source"}
           </Link>
         )}
       </div>
@@ -121,18 +121,35 @@ export default function ProjectsPage() {
   };
 
   // If a project is selected, show the detailed view
-  if (selectedProjectId && detailedProjects[selectedProjectId]) {
-    const project = detailedProjects[selectedProjectId];
-    return (
-      <div className="py-8">
-        <Section title="Projects" subtitle="Selected work in analytics, BI, and AI-driven systems.">
-          <DetailedProjectCard
-            {...project}
-            onBack={handleBack}
-          />
-        </Section>
-      </div>
-    );
+  if (selectedProjectId) {
+    if (selectedProjectId === "ufc-event-analysis") {
+      return (
+        <div className="py-8">
+          <Section title="Projects" subtitle="Selected work in analytics, BI, and AI-driven systems.">
+            <button
+              onClick={handleBack}
+              className="mb-6 inline-flex items-center gap-2 rounded-md border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+            >
+              Back to Projects
+            </button>
+            <UFCEventAnalysis />
+          </Section>
+        </div>
+      );
+    }
+    if (detailedProjects[selectedProjectId]) {
+      const project = detailedProjects[selectedProjectId];
+      return (
+        <div className="py-8">
+          <Section title="Projects" subtitle="Selected work in analytics, BI, and AI-driven systems.">
+            <DetailedProjectCard
+              {...project}
+              onBack={handleBack}
+            />
+          </Section>
+        </div>
+      );
+    }
   }
 
   // Show the overview grid

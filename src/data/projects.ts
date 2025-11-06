@@ -36,6 +36,16 @@ export interface DetailedProject {
 
 export const projects: Project[] = [
   {
+    id: "ufc-event-analysis",
+    title: "UFC Event Analysis",
+    description: "Maximize the Octagon: Where & When to Fight Next ?",
+    tools: "Python, Plotly, HTML/CSS",
+    role: "Data analysis and visualization",
+    results: "Identified optimal markets and seasonal timing to maximize PPV and live gate.",
+    images: ["ufc/UFC.jpg"],
+    hasDetailedView: true
+  },
+  {
     id: "esports-championship-analytics",
     title: "Maghreb Esports Championship Analytics Platform",
     description: "Comprehensive SQL-based analytics solution for a regional esports championship, analyzing tournament performance, team dynamics, and player statistics across multiple games. Built advanced queries to track team rankings, identify player transfers, analyze match patterns, and provide strategic insights for tournament organizers and team managers.",
