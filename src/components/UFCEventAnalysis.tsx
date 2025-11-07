@@ -1,6 +1,6 @@
 "use client";
 
-import Gist from "react-gist";
+import GistEmbed from "./GistEmbed";
 
 export default function UFCEventAnalysis() {
   return (
@@ -25,15 +25,25 @@ export default function UFCEventAnalysis() {
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Scraping UFC Event Locations and PPV</h3>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 overflow-hidden">
-              <Gist id="603697755cfc3c923ae4873ced176015" />
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-0 overflow-hidden">
+              <iframe
+                src="https://nbviewer.org/gist/RBenOthmen/603697755cfc3c923ae4873ced176015"
+                className="w-full border-0"
+                style={{ minHeight: 700 }}
+                title="Scraping UFC Event Locations and PPV Notebook"
+              />
             </div>
           </div>
           
           <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Preparing UFC Event Locations and PPV</h3>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 overflow-hidden">
-              <Gist id="cc98e6563c71f7baa840f61fcceff0e9" />
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-0 overflow-hidden">
+              <iframe
+                src="https://nbviewer.org/gist/RBenOthmen/cc98e6563c71f7baa840f61fcceff0e9"
+                className="w-full border-0"
+                style={{ minHeight: 700 }}
+                title="Preparing UFC Event Locations and PPV Notebook"
+              />
             </div>
           </div>
         </div>
