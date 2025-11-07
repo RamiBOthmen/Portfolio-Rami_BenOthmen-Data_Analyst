@@ -25,7 +25,7 @@ export default function UFCEventAnalysis() {
           This world map shows us the geographical distribution of our resources by coloring each region based on the total Number of Events it has hosted.
         </p>
         <div className="mt-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-          <iframe src="/assets/projects/plots/regions_by_nb_events.html" className="w-full" style={{ height: 600 }} />
+          <iframe src="/assets/projects/UFC%20Event%20Analysis/plots/regions_by_nb_events.html" className="w-full" style={{ height: 600 }} />
         </div>
       </div>
 
@@ -44,7 +44,7 @@ export default function UFCEventAnalysis() {
           This bar chart reveals where the organization actually spends its time and effort by comparing the Top 5 and Bottom 5 regions based on the sheer number of events hosted.
         </p>
         <div className="mt-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-          <iframe src="/assets/projects/plots/top_and_bottom_regions_by_nb_events.html" className="w-full" style={{ height: 600 }} />
+          <iframe src="/assets/projects/UFC%20Event%20Analysis/plots/top_and_bottom_regions_by_nb_events.html" className="w-full" style={{ height: 600 }} />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export default function UFCEventAnalysis() {
           This chart plots every region's average Live Gate (Attendance) against its average PPV Buys (Buyrate). The bubble size is the number of events.
         </p>
         <div className="mt-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-          <iframe src="/assets/projects/plots/attendance_vs_buyrate.html" className="w-full" style={{ height: 600 }} />
+          <iframe src="/assets/projects/UFC%20Event%20Analysis/plots/attendance_vs_buyrate.html" className="w-full" style={{ height: 600 }} />
         </div>
       </div>
 
@@ -81,7 +81,7 @@ export default function UFCEventAnalysis() {
           This dual-axis line chart shows us the average Buyrate (left axis, blue line) and Attendance (right axis, red line) for events across every month of the year.
         </p>
         <div className="mt-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-          <iframe src="/assets/projects/plots/buyrate_and_attendance_by_month.html" className="w-full" style={{ height: 600 }} />
+          <iframe src="/assets/projects/UFC%20Event%20Analysis/plots/buyrate_and_attendance_by_month.html" className="w-full" style={{ height: 600 }} />
         </div>
       </div>
 
