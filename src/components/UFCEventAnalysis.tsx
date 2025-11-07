@@ -1,3 +1,5 @@
+import { ExternalLink, FileText } from "lucide-react";
+
 export default function UFCEventAnalysis() {
   return (
     <div className="max-w-6xl mx-auto">
@@ -10,6 +12,35 @@ export default function UFCEventAnalysis() {
           <b>Role:</b> Junior Data Analyst<br />
           <b>Date:</b> November 2025
         </p>
+      </div>
+
+      <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Project Documentation</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Learn more about the data collection and preparation process for this analysis:
+        </p>
+        <div className="flex flex-col gap-3">
+          <a
+            href="/assets/projects/UFC%20Event%20Analysis/Scraping%20UFC%20Event%20Locations%20and%20PPV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 hover:underline transition-colors"
+          >
+            <FileText size={18} />
+            Scraping UFC Event Locations and PPV
+            <ExternalLink size={16} />
+          </a>
+          <a
+            href="/assets/projects/UFC%20Event%20Analysis/Preparing%20UFC%20Event%20Locations%20and%20PPV.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 hover:underline transition-colors"
+          >
+            <FileText size={18} />
+            Preparing UFC Event Locations and PPV
+            <ExternalLink size={16} />
+          </a>
+        </div>
       </div>
 
       <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
