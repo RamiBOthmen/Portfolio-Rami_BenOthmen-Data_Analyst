@@ -42,7 +42,7 @@ export const projects: Project[] = [
     tools: "Python, Plotly, HTML/CSS",
     role: "Data analysis and visualization",
     results: "Identified optimal markets and seasonal timing to maximize PPV and live gate.",
-    images: ["UFC Event Analysis/UFC.jpg"],
+    images: ["UFC Event Analysis/ufc_merab.jpg"],
     hasDetailedView: true
   },
   {
