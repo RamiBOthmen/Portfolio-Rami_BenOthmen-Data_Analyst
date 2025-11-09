@@ -8,11 +8,36 @@ export default function UFCEventAnalysis() {
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Maximize the Octagon: Where &amp; When to Fight Next ?</h1>
 
       <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">🔴 Challenges & How I Solved Them</h2>
+        {/* <p className="text-gray-700 dark:text-gray-300 mb-6">
+          Learn more about the data collection and preparation process for this analysis:
+        </p> */}
+        
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">❌ Challenge 1: I didn't find a dataset that contained both UFC event locations and PPV numbers.</h3>
+            <div className="text-gray-700 dark:text-gray-300 mb-6">
+              <div>✅ How I solved it:</div>
+              <div>- Instead of using incomplete data, I collected everything myself.</div>
+              <div>- I scraped multiple websites, cleaned the data, removed duplicates, matched events by name and date, and combined everything into one reliable dataset that I could actually analyze.</div>
+            </div>
+          </div>
+          
+          <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">❌ Challenge 2: I wanted to put my plots on my website, but keeping them interactive was a problem.</h3>
+            <div className="text-gray-700 dark:text-gray-300 mb-6">
+              <div>✅ How I solved it:</div>
+              <div>- Most people just save charts as images, but that removes all the interactivity.</div>
+              <div>- To avoid that, I exported each Python plot as an HTML file and then embedded those files directly into the website.</div>
+              <div>- This way, every chart stayed interactive and users can zoom, hover, and explore the data just like in Python.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
         <p className="text-gray-800 dark:text-gray-200">
-          <strong>Are we putting our biggest fights in the best possible spots and at the perfect time?</strong><br />
-          <b>Presenter:</b> Rami Ben Othmen<br />
-          <b>Role:</b> Junior Data Analyst<br />
-          <b>Date:</b> November 2025
+          <strong>The Question We Are Trying to Answer: Are we putting our biggest fights in the best possible spots and at the perfect time?</strong><br />
         </p>
       </div>
 
@@ -154,7 +179,7 @@ export default function UFCEventAnalysis() {
       </div>
 
       <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
-        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Thank You!</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">The End !</h2>
       </div>
     </div>
   );
