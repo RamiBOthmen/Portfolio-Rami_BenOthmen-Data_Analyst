@@ -35,7 +35,7 @@ function ProjectCard({ project, onViewDetails }: {
       {/* Images Section */}
       {project.images && project.images.length > 0 && (
         <div className="mt-4">
-          <h4 className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-2">Project Visualizations:</h4>
+          {/* <h4 className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-2">Project Visualizations:</h4> */}
           <div className="grid grid-cols-1 gap-3">
             {[project.images[0]].map((image: string, index: number) => (
               <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedIndex(0)}>

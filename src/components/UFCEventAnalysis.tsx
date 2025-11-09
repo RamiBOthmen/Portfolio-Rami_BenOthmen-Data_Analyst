@@ -9,9 +9,6 @@ export default function UFCEventAnalysis() {
 
       <div className="mb-8 rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white/70 dark:bg-gray-900/50">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">🔴 Challenges & How I Solved Them</h2>
-        {/* <p className="text-gray-700 dark:text-gray-300 mb-6">
-          Learn more about the data collection and preparation process for this analysis:
-        </p> */}
         
         <div className="space-y-6">
           <div>

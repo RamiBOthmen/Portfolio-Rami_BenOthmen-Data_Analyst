@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: "ufc-event-analysis",
     title: "UFC Event Analysis",
-    description: "Maximize the Octagon: Where & When to Fight Next ?",
+    description: "Analyzing UFC pay-per-view events to determine the most profitable locations and timing, recommending increased fights in high-value markets like the UAE and targeting peak seasonal months in the US and Canada to maximize revenue.",
     tools: "Python, Plotly, HTML/CSS",
     role: "Data analysis and visualization",
     results: "Identified optimal markets and seasonal timing to maximize PPV and live gate.",
